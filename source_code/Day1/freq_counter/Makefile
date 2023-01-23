@@ -2,7 +2,6 @@ include ../rules.mk
 .PHONY: all clean config_arty_freq
 
 TARGET = freq_count_tb
-TARGET += freq_counter.pdf
 
 CLEAN = $(TARGET)
 CLEAN += freq_count.vcd freq_count_tb freq_demo_tb freq_demo.vcd

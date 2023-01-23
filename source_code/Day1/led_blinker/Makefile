@@ -3,7 +3,6 @@ include ../rules.mk
 .PHONY: all clean config_arty_led config_marble_led
 
 TARGET = led_test_tb
-TARGET += led_blinker.pdf led_blinker_solution.pdf
 CLEAN += $(TARGET) led_test.vcd arty_led_top.bit marble_led_top.bit arty_led_vivado.v marble_led_vivado.v
 
 led_test_tb: led_test.v
