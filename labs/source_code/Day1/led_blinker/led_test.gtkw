@@ -1,0 +1,22 @@
+[timestart] 0
+[size] 1000 600
+[pos] -1 -1
+*-6.209511 10 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] led_test_tb.
+[sst_width] 193
+[signals_width] 98
+[sst_expanded] 1
+[sst_vpaned_height] 167
+@28
+led_test_tb.clk
+@800029
+led_test_tb.led[3:0]
+@29
+(0)led_test_tb.led[3:0]
+(1)led_test_tb.led[3:0]
+(2)led_test_tb.led[3:0]
+(3)led_test_tb.led[3:0]
+@1001209
+-group_end
+[pattern_trace] 1
+[pattern_trace] 0
