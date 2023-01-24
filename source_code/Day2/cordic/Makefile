@@ -1,7 +1,6 @@
 include ../rules.mk
 
 TARGET = cordic_ptor.csv cordic_rtop.csv
-TARGET += cordic.pdf cordic_solution.pdf
 NSTG = 20		# Number of stages
 DW = 18			# CORDIC data width 16 <= DW <= 21
 VFLAGS_cordicg_tb = -P cordicg_tb.width=$(DW) -P cordicg_tb.nstg=$(NSTG)
