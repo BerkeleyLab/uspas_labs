@@ -1,6 +1,6 @@
 include ../rules.mk
 
-TARGET = ph_acc.csv dds.pdf dds_solution.pdf
+TARGET = ph_acc.csv
 
 all: $(TARGET)
 
