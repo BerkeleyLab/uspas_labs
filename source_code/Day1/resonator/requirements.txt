@@ -1,5 +1,0 @@
-matplotlib
-scikit-rf
-pillow
-pyserial
-packaging
