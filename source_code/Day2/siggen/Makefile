@@ -4,7 +4,8 @@ all: waves.csv
 
 vpath %.v ../dds ../cordic
 
-# cordicg_b22.v will appear magically based on rules in $(CORDIC_DIR)/rules.mk
+cordicg_b22.v: ../cordic/cordicgx.py
+	$(PYTHON) $< 22 > $@
 
 dds_lab_tb: dds_lab.v ph_acc.v cordicg_b22.v cstageg.v addsubg.v
 
