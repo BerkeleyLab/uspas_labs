@@ -1,0 +1,25 @@
+[timestart] 951
+[size] 1088 335
+[pos] -1 -1
+*-6.000000 1116 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] noniq_ddc_tb.
+[sst_width] 213
+[signals_width] 167
+[sst_expanded] 1
+[sst_vpaned_height] 72
+@420
+noniq_ddc_tb.cc
+@10420
+noniq_ddc_tb.clk
+@420
+noniq_ddc_tb.a_data[15:0]
+noniq_ddc_tb.amp_out
+noniq_ddc_tb.phs_out
+@8028
+noniq_ddc_tb.amp_out
+@20000
+-
+@8028
+noniq_ddc_tb.phs_out
+[pattern_trace] 1
+[pattern_trace] 0
