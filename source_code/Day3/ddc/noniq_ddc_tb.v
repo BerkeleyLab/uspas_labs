@@ -12,9 +12,9 @@ parameter real SIG_PHS_DEG = 20;        // deg
 parameter real DDC_AMP_GAIN = 3.3396;   // measured
 parameter real DDC_PHS_OFF  = 62.6087;  // `NUM_DDS/`DEN_DDS * 360 deg, 1 cycle
 
-parameter FDOWN_LATENCY = 11;           // fdownconvert latency, in clock cycles
+parameter FDOWN_LATENCY = 16;           // fdownconvert latency, in clock cycles
 parameter CC_N0 = 100;                  // #cycle to inject signal
-parameter CC_N1 = 113;                  // #cycle to change input signal phase
+parameter CC_N1 = CC_N0 + 5;            // #cycle to change input signal phase
 
 parameter real AMP_ACCURACY = 0.001;// < 0.1% RMS
 parameter real PHS_ACCURACY = 0.1;  // < 0.1 deg RMS
