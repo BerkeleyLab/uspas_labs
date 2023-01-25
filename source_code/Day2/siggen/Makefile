@@ -1,4 +1,6 @@
 include ../rules.mk
+CORDIC_DIR = ../cordic
+include $(CORDIC_DIR)/rules.mk
 
 all: waves.csv
 
