@@ -27,10 +27,11 @@ def reg2freq(ph, pl, modulo, fclk, dwh=20, dwl=12):
     :param int dwl:     data width of minor resolution register
     :return int:        DDS frequency in Hz
     """
-    step_mod = modulo * pl / 2**dwl
-    resol = fclk / (2**(dwh + dwl) + step_mod)
-    print(f'major resolution:  {resol * 2**dwl:.3f} Hz')
+    # step_mod = modulo * pl / 2**dwl
+    resol = fclk / (2**dwh) / (2**dwl - modulo)
+    maj_resol = resol*(2**dwl-modulo)
+    print(f'major resolution:  {maj_resol:.3f} Hz')
     print(f'minor resolution:  {resol:.3f} Hz')
     print(f'modulo resolution: {resol/2**dwl * pl:.3f} Hz')
-    freq = (ph * 2**dwl + pl + step_mod) * resol
+    freq = (ph * (2**dwl-modulo) + pl) * resol
     return freq
